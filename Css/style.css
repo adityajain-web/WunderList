@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
+/* Reset */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: all 0.8s ease-in;
+  font-family: "Baloo 2", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #091e42;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Hero Section */
+
+#hero #hero_container {
+  height: 120vh;
+  padding-top: 6rem;
+  background-image: linear-gradient(to bottom, #ebe7ff, #ebe7ff);
+}
+
+#hero #hero_container .row {
+  height: 87.4vh;
+}
+
+#hero #hero_container .row .text-container h1 {
+  font-size: 3.125rem;
+  font-weight: 500;
+}
+
+/* Hero Section media query */
+
+@media only screen and (max-width: 576px) {
+  #hero #hero_container {
+    height: auto;
+    padding-top: 3.5rem;
+  }
+
+  #hero #hero_container .row {
+    height: auto;
+  }
+
+  #hero #hero_container .row .text-container h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 577px) {
+  #hero #hero_container {
+    height: auto;
+    padding-top: 4.5rem;
+  }
+
+  #hero #hero_container .row {
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  #hero #hero_container .row .text-container h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  #hero #hero_container {
+    height: auto;
+    padding-top: 4.5rem;
+  }
+
+  #hero #hero_container .row {
+    height: auto;
+    padding: 2rem 0;
+  }
+}
+
+/* Hero Section Media Query End */
+
+/* Hero Section End */
+
+/* Product Section start  */
+
+#product #product_container h2 {
+  font-size: 2.5rem;
+}
+
+#product .logos img {
+  width: 10%;
+}
+
+/* Product Section Media Query start */
+@media only screen and (max-width: 576px) {
+  #product #product_container h2 {
+    font-size: 1.5rem;
+  }
+
+  #product .logos img {
+    width: 40%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 577px) {
+  #product .logos img {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  #product .logos img {
+    width: 40%;
+  }
+}
+
+/* Product Section Media Query end */
+
+/* Product Section End  */
+
+/* Feature Section Start */
+#feature #feature_container .box h2 {
+  font-size: 2.5rem;
+}
+
+/* Feature Section Media Query Start */
+@media only screen and (max-width: 576px) {
+  #feature #feature_container .box h2 {
+    font-size: 1.5rem;
+  }
+}
+/* Feature Section Media Query End */
+
+/* Feature Section End */
+
+/* Checkout Section Start */
+
+#checkout_container {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 1rem 0;
+}
+
+/* Checkout Section end */
+
+/* Testimonial Section Start */
+
+#testimonial_section #section_container .testimonial_container .glide {
+  position: relative;
+}
+
+#testimonial_section #section_container {
+  background-color: #e6fcff;
+}
+
+.glide__track {
+  border-bottom: 5px solid black;
+}
+
+#testimonial_section
+  #section_container
+  .testimonial_container
+  .glide
+  .glide__arrows {
+  position: absolute;
+  bottom: -2rem;
+  left: 8rem;
+}
+
+#testimonial_section
+  #section_container
+  .testimonial_container
+  .glide
+  .glide__arrows
+  .glide__arrow {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+/* Testimonial Section End */
+
+/* Signup Section Start */
+
+#signup_container {
+  height: 40vh;
+  background-image: linear-gradient(to top, #539cfd, #403496),
+    url("https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Signup Section End */

@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.8s ease-in;
+  font-family: "Baloo 2", cursive;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.fixed_img img {
+  display: block;
+  width: 25%;
+  position: fixed;
+  bottom: 0;
+}
+
+.fixed_img img#img1 {
+  left: 0;
+}
+
+.fixed_img img#img2 {
+  right: 0;
+}
+
+#form_wrapper {
+  border-left: 2px solid lightgray;
+  border-right: 2px solid lightgray;
+}
+
+#form_wrapper #signUpForm_container #form_body form .form-group {
+  position: relative;
+}
+
+#form_wrapper #signUpForm_container #form_body form .form-group i {
+  position: absolute;
+  right: 1rem;
+  bottom: 2.2rem;
+}
+
+#form_wrapper
+  #signUpForm_container
+  #form_body
+  form
+  .form-group
+  i.fa-check-circle {
+  color: #28a745;
+  visibility: hidden;
+}
+
+#form_wrapper
+  #signUpForm_container
+  #form_body
+  form
+  .form-group.success
+  i.fa-check-circle {
+  visibility: visible;
+}
+
+#form_wrapper
+  #signUpForm_container
+  #form_body
+  form
+  .form-group
+  i.fa-exclamation-circle,
+#form_wrapper #signUpForm_container #form_body form .form-group small {
+  color: #dc3545;
+  visibility: hidden;
+}
+
+#form_wrapper
+  #signUpForm_container
+  #form_body
+  form
+  .form-group.error
+  i.fa-exclamation-circle,
+#form_wrapper #signUpForm_container #form_body form .form-group.error small {
+  visibility: visible;
+}
+
+#signupErrorMsg,
+#signinErrorMsg {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #fixed_img1 #img1 {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  #fixed_img1 #img1 {
+    top: 0;
+  }
+
+  #form_wrapper {
+    padding: 12rem 0;
+  }
+}
