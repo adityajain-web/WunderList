@@ -18,6 +18,11 @@ $(document).ready(function () {
         e.preventDefault();
         location.href = "Login.html"
     });
+
+    $(".navbar-toggler").click(function (e) {
+        e.preventDefault();
+        $("#navbarNav").css('backgroundColor', '#fff');
+    });
 });
 
 

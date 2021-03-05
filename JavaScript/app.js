@@ -80,7 +80,8 @@ $(document).ready(function () {
     $("#addToDoBtn").click(function (e) {
         e.preventDefault();
         let userEvent = $("#userInput").val();
-        let id = counter += 1;
+        if(userEvent!=""){
+let id = counter += 1;
         document.getElementById('form').reset();
         auth.onAuthStateChanged(user => {
             if (user) {
@@ -93,7 +94,10 @@ $(document).ready(function () {
                     console.log(err.message);
                 });
             }
-        })
+        });
+        }else{
+            alert("You have to write something...");
+        }
     });
 
     $("#logoutBtn").click(function (e) {
